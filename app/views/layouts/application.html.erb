@@ -10,6 +10,8 @@
 
   <body>
     <%= yield %>
+    <%= javascript_pack_tag 'manifest'%>
+    <%= javascript_pack_tag 'vendor'%>
     <%= yield :inline_js %>
   </body>
 </html>
