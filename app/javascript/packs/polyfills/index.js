@@ -1,4 +1,4 @@
-import 'babel-polyfill'
+// import 'babel-polyfill' ← babel-plugin-transform-runtimeを入れると不要
 
 const obj1 = { a: 1 };
 const obj2 = { b: 2 };
