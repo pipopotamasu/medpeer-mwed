@@ -4,4 +4,5 @@ Rails.application.routes.draw do
     resources :hoges, only: %i(index)
     resources :fugas, only: %i(index)
   end
+  resources :polyfills, only: %i(index)
 end
