@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   end
 
   namespace :csrf do
-    resources :hoges, only: %i(index)
+    resources :hoges, only: %i(index) do
+      collection do
+        post 'post'
+      end
+    end
   end
 
   resources :polyfills, only: %i(index)
