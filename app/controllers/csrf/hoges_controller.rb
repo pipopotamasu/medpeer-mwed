@@ -3,6 +3,6 @@ class Csrf::HogesController < ApplicationController
   end
 
   def post
-    p 9837549759473
+    render json: { result: 'Success!' }
   end
 end

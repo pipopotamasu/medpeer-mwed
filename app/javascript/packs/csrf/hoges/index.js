@@ -1,10 +1,18 @@
-import axios from 'axios'
-import { csrfToken } from 'rails-ujs'
+import $ from 'jquery-csrf'
+// import axios from 'axios-csrf'
 
-axios.defaults.headers.common['X-CSRF-Token'] = csrfToken()
 
-axios.post('/csrf/hoges/post').then((res) => {
-  console.log(res)
-}).catch((e) => {
-  console.log(e)
+$.ajax({
+  url: '/csrf/hoges/post',
+  method: 'POST',
+  dataType: 'json',
+  success: (response) => {
+    console.log(response);
+  }
 });
+
+// axios.post('/csrf/hoges/post').then((res) => {
+//   console.log(res)
+// }).catch((e) => {
+//   console.log(e)
+// });
