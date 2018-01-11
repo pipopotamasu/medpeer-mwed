@@ -1,5 +1,6 @@
-// import axios from 'axios'
 import $ from 'jquery-csrf'
+// import axios from 'axios-csrf'
+
 
 $.ajax({
   url: '/csrf/hoges/post',
@@ -10,8 +11,6 @@ $.ajax({
   }
 });
 
-// axios.defaults.headers.common['X-CSRF-Token'] = csrfToken()
-//
 // axios.post('/csrf/hoges/post').then((res) => {
 //   console.log(res)
 // }).catch((e) => {
