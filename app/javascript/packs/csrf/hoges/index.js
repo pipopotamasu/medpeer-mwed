@@ -1,12 +1,5 @@
 // import axios from 'axios'
-import $ from 'jquery'
-import { csrfToken } from 'rails-ujs'
-
-$.ajaxSetup({
-  headers: {
-    'X-CSRF-TOKEN': csrfToken()
-  }
-})
+import $ from 'jquery-csrf'
 
 $.ajax({
   url: '/csrf/hoges/post',
