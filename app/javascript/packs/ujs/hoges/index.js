@@ -3,7 +3,7 @@ import $ from 'jquery-csrf'
 
 
 $.ajax({
-  url: '/csrf/hoges/post',
+  url: '/ujs/hoges/post',
   method: 'POST',
   dataType: 'json',
   success: (response) => {

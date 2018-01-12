@@ -1,4 +1,4 @@
-class Csrf::HogesController < ApplicationController
+class Ujs::HogesController < ApplicationController
   def index
   end
 

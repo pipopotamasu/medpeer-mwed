@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :fugas, only: %i(index)
   end
 
-  namespace :csrf do
+  namespace :ujs do
     resources :hoges, only: %i(index) do
       collection do
         post 'post'
