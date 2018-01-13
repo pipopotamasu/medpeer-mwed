@@ -1,9 +1,9 @@
-import $ from 'jquery-csrf'
-// import axios from 'axios-csrf'
+import $ from '../../jquery-csrf'
+// import axios from '../../axios-csrf'
 
 
 $.ajax({
-  url: '/csrf/hoges/post',
+  url: '/ujs/hoges/post',
   method: 'POST',
   dataType: 'json',
   success: (response) => {
