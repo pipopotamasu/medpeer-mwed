@@ -1,5 +1,5 @@
-import $ from 'jquery-csrf'
-// import axios from 'axios-csrf'
+import $ from '../../jquery-csrf'
+// import axios from '../../axios-csrf'
 
 
 $.ajax({
